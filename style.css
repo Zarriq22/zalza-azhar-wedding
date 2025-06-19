@@ -54,7 +54,7 @@ section {
 }
 
 .image-cover-wedding {
-    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/bg-invitation-green.png?raw=true');
+    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bg-invitation-green.png?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ section {
 /* Wedding Body */
 #cover {
     position: relative;
-    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-5.jpg?raw=true');
+    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-intro.jpg?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@ section {
 }
 
 .background-image {
-    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/bg-layer-green.png?raw=true');
+    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bg-layer-green.png?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -336,7 +336,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/and-layer-green.png?raw=true');
+    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/and-layer-green.png?raw=true');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -393,7 +393,7 @@ section {
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
-    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/bg-layer-green.png?raw=true'); /* gedung samar */
+    background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bg-layer-green.png?raw=true'); /* gedung samar */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
