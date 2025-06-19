@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+        <title>The Wedding of Zalza & Azhar</title>
+
+        <link type="image/x-icon" rel="icon" href="https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/logo.png?raw=true">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+        <link href="https://fonts.googleapis.com/css2?family=Farsan&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Farsan&family=Fredericka+the+Great&family=Galada&family=Love+Light&family=Pinyon+Script&&family=Qahiri&display=swap" rel="stylesheet">
+
+        <meta property="og:title" content="The Wedding of Zalza & Azhar" />
+        <meta property="og:description" content="Undangan pernikahan digital. Klik untuk melihat detail acara." />
+        <meta property="og:image" content="https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/prewedding.png?raw=true" />
+        <meta property="og:url" content="https://zarriq22.github.io/zalza-azhar-wedding/" />
+        <meta property="og:type" content="website" />
+
+        <script src="index.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <!-- COVER -->
+        <div style="display: flex;">
+            <div class="cover-wedding">
+                <div class="image-cover-wedding">
+                    <div>
+                        <span>Z</span>
+                        <span>&</span>
+                        <span>A</span>
+                    </div>
+                </div>
+            </div>
+            <div class="body-wedding">
+                <div id="cover">
+                    <h1 style="font-family: 'Tangerine', serif;">The Wedding Of</h1>
+                    <p>Kepada Bapak/Ibu/Saudara/i</p>
+                    <button id="openBtn"><i class="fa fa-envelope"></i> Buka Undangan</button>
+                    <small>*Mohon maaf apabila ada kesalahan penulisan nama/gelar</small>
+                    <div class="gradasi-bawah"></div>
+                </div>
+                
+                
+                <!-- Main Content -->
+                <div id="mainContent" style="display: none;">
+                    <div class="background-layer">
+                        <div class="background-image"></div>
+                    </div>
+                    <button class="music" onclick="toggleMusic()">
+                        <div>
+                            <!-- Musik -->
+                            <audio id="bgMusic" loop>
+                                <source src="https://github.com/Zarriq22/assset-azra-wedding/raw/refs/heads/main/asset%20kita/audio/perfect-saxophone.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                            </audio>
+                    
+                            <span id="musicBtn"><i class="fa fa-play"></i></span>
+                        </div>
+                    </button>
+                    
+                    <header id="home">
+                        <div class="image-home">
+                            <video id="bgVideo" style="width: 100%; height: 100%; object-fit: cover" loop>
+                                <source src="https://github.com/Zarriq22/assset-azra-wedding/raw/refs/heads/main/asset%20kita/video/video-hijau-mobile.mp4" media="(max-width: 600px)" type="video/mp4"/>
+                                <source src="https://github.com/Zarriq22/assset-azra-wedding/raw/refs/heads/main/asset%20kita/video/video-hijau.mp4" media="(min-width: 600px)" type="video/mp4"/>
+                                Browsermu tidak mendukung tag ini, upgrade donk!
+                            </video>
+                            <div class="text-home">
+                                <small class="animate-scale">The Wedding of</small>
+                                <div>
+                                    <span class="animate-scale">Zalza</span>
+                                    <span class="animate-scale">&</span>
+                                    <span class="animate-scale">Azhar</span>
+                                </div>
+                                <p class="animate-scale">24 Januari 2026</p>
+                            </div>
+                            <div class="gradasi-bawah"></div>
+                        </div>
+                    </header>
+        
+                    <section id="introduce" class="sec-introduce scroll-animate" style="margin-bottom: 0%;">
+                        <div>
+                            <div class="image-prewedding">
+                                <img src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/preweding-1.png?raw=true" alt="" width="100%">
+                            </div>
+                            <div style="background: none; padding: 0px 24px">
+                                <h2 class="section-title title-name scroll-animate">بسم الله الرحمن الرحيم</h2>
+                                <div class="text-center scroll-animate" style="display: flex; flex-direction: column; color: black">
+                                    <small><i>"Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir."</i></small>
+                                    <span class="font-bold scroll-animate" style="margin-top: 2rem;">- QS. Ar-Rum : 21 -</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section id="mempelai" class="section-mempelai">
+                        <div>
+                            <h2 class="section-title scroll-animate" style="display: flex; flex-direction: column;"><span>We Are</span><span>Getting Married</span></h2>
+                            <div class="quote-text text-center scroll-animate">
+                                Maha Suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Ya Allah semoga ridho-Mu tercurah mengiringi pernikahan kami:
+                            </div>
+                            <div class="container-mempelai" style="margin-top: 2rem">
+                                <div class="card-mempelai scroll-animate">
+                                    <img src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/mempelai-wanita.png?raw=true" alt="Mempelai Wanita" class="foto-mempelai" />
+                                    <h3 class="nama">Zalza Billa Amira M.R</h3>
+                                    <p class="peran">Anak pertama dari Bpk Huta Ghani dan Ibu Mia Kurniawati</p>
+                                    <div class="social-media">
+                                        <a href="https://www.instagram.com/maghfiera_/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.tiktok.com/@maghfiera0">
+                                            <i class="fab fa-tiktok"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="and scroll-animate"></div>
+                                <div class="card-mempelai scroll-animate">
+                                    <img src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/mempelai-pria.png?raw=true" alt="Mempelai Pria" class="foto-mempelai" />
+                                    <h3 class="nama">Azhar Abdurrafiq Sujana</h3>
+                                    <p class="peran">Anak pertama dari Bpk Uden Sujana dan Ibu Lina Sofiah</p>
+                                    <div class="social-media">
+                                        <a href="https://www.instagram.com/azharrafiq_sjn/">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a href="https://www.tiktok.com/@arrafiq7425">
+                                            <i class="fab fa-tiktok"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section id="wedding-event" style="padding: 0%;">
+                        <div class="date-wedding">
+                            <div class="carousel-container">
+                                <div class="carousel-slide animate-scale">
+                                    <img src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-1.jpg?raw=true" alt="">
+                                    <img src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-2.jpg?raw=true" alt="">
+                                    <img src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-3.jpg?raw=true" alt="">
+                                    <img src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-4.jpg?raw=true" alt="">
+                                </div>
+                                <div class="gradasi-bawah"></div>
+                            </div>
+                            <h2 class="section-title scroll-animate">Save The Date</h2>
+                            <div class="quote-text text-center scroll-animate">
+                                Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i, untuk menghadiri acara pernikahan kami:
+                            </div>
+                            <div class="countdown-box animate-scale" id="countdown">
+                                <p>Loading countdown...</p>
+                            </div>
+                            <div class="akad-card">
+                                <div class="card-inner scroll-animate">
+                                    <div class="card-content">
+                                        <h2>Akad Nikah</h2>
+                                        <p class="tanggal">Sabtu<br>24 Januari 2026<br>08.00 WIB</p>
+                                        <p class="lokasi-title">KEDIAMAN MEMPELAI WANITA</p>
+                                        <p class="alamat">
+                                            Masjid Jami Al-Husnah Graha Taman Sukabumi, Kel. Karamat, Kec. Gunung Puyuh, Kota Sukabumi, Jawa Barat.
+                                        </p>
+                                        <div style="display: flex; align-items: center; gap: 10px; justify-content: center; flex-direction: column;">
+                                            <span class="maps-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </span>
+                                            <a href="https://www.google.com/maps/place/Masjid+Jami+Al-Husnah+Graha+Taman+Sukabumi/@-6.9011852,106.9240423,19.75z/data=!4m9!1m2!2m1!1sgraha+taman+sukabumi!3m5!1s0x2e6849856d110909:0x48a37cc013b16069!8m2!3d-6.9011295!4d106.9244063!16s%2Fg%2F11h1tj10fj?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" class="maps-button"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-inner scroll-animate">
+                                    <div class="card-content">
+                                        <h2>Resepsi</h2>
+                                        <p class="tanggal">Sabtu<br>24 Januari 2026<br>10.00 - 14.00 WIB</p>
+                                        <p class="lokasi-title">KEDIAMAN MEMPELAI WANITA</p>
+                                        <p class="alamat">
+                                            Graha Taman Sukabumi, Kel. Karamat, Kec. Gunung Puyuh, Kota Sukabumi, Jawa Barat.
+                                        </p>
+                                        <div style="display: flex; align-items: center; gap: 10px; justify-content: center; flex-direction: column;">
+                                            <span class="maps-icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </span>
+                                            <a href="https://www.google.com/maps/place/Masjid+Jami+Al-Husnah+Graha+Taman+Sukabumi/@-6.9011852,106.9240423,19.75z/data=!4m9!1m2!2m1!1sgraha+taman+sukabumi!3m5!1s0x2e6849856d110909:0x48a37cc013b16069!8m2!3d-6.9011295!4d106.9244063!16s%2Fg%2F11h1tj10fj?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" class="maps-button"><i class="fas fa-map-marker-alt"></i> Google Maps</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section id="wedding-gift" class="wedding-gift scroll-animate">
+                        <h2 class="section-title">Wedding Gift</h2>
+                        <div class="quote-text text-center">
+                            Tanpa mengurangi rasa hormat, bagi Bapak/Ibu/Saudara/i yang ingin memberikan tanda kasih untuk kami, dapat melalui:
+                        </div>
+                        <div class="gift-card" id="giftContainer"></div>
+                    </section>
+
+                    <section id="galeri" class="card-gallery scroll-animate" style="margin-bottom: 0%;">
+                        <h2 class="section-title">Our Gallery</h2>
+                        <div class="gallery">
+                            <img class="animate-scale" src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-1.jpg?raw=true" alt="Pasangan 1" />
+                            <img class="animate-scale" src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-2.jpg?raw=true" alt="Pasangan 2" />
+                            <img class="animate-scale" src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-3.jpg?raw=true" alt="Pasangan 3" />
+                            <img class="animate-scale" src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-4.jpg?raw=true" alt="Pasangan 4" />
+                            <img class="animate-scale" src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-9.jpg?raw=true" alt="Pasangan 9" />
+                            <img class="animate-scale" src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-6.jpg?raw=true" alt="Pasangan 6" />
+                            <img class="animate-scale" src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-7.jpg?raw=true" alt="Pasangan 7" />
+                            <img class="animate-scale" src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/asset%20kita/images/prewed-8.jpg?raw=true" alt="Pasangan 8" />
+                        </div>
+                    </section>
+        
+                    <!-- <section id="cerita-kita" scroll-left">
+                        <div class="cerita-kita">
+                            <h2 class="section-title">Cerita Cinta Kami</h2>
+                            <p>
+                                Kami bertemu, bertumbuh bersama, dan kini siap menjalani hidup sebagai satu. 
+                                Kehadiran Anda akan menambah kebahagiaan kami dalam lembaran baru kehidupan ini.
+                            </p>
+                        </div>
+                    </section> -->
+        
+                    <section id="rsvp" class="rsvp" style="margin-bottom: 0%">
+                        <h2 class="section-title scroll-animate" style="margin-bottom: 0%; font-size: 55px;">Wishes</h2>
+                        <div class="quote-text text-center scroll-animate">
+                            Ucapan Selamat, Doa & Konfirmasi Kehadiran
+                        </div>
+                        <div class="jumlahUcapan scroll-animate">
+                            <i class="fa fa-comment"></i>
+                            <div>
+                                <span id="jumlahUcapan"></span>
+                                <span>Ucapan</span>
+                            </div>
+                        </div>
+                        <div style="position: relative;" class="scroll-animate">
+                            <div id="loadingScreen" style="display: none;"><span></span></div>
+                            <form id="rsvpForm" class="rsvp-form">
+                                <input type="text" id="name" name="name" placeholder="Nama lengkap" required>
+                                <input type="number" id="jumlah" name="jumlah" placeholder="Contoh: 2">
+                                <select id="kehadiran" name="kehadiran" required>
+                                    <option value="">Konfirmasi Kehadiran</option>
+                                    <option value="Hadir">Hadir</option>
+                                    <option value="Tidak Hadir">Tidak Hadir</option>
+                                </select>
+                                <textarea id="pesan" name="pesan" placeholder="Ucapan atau pesan..."></textarea>
+    
+                                <button type="submit" style="width: 100px;">Kirim</button>
+                            </form>
+                        </div>
+                        <p id="rsvpMessage" class="animate-scale" style="margin-top: 10px;"></p>
+                        <div id="hasil" class="scroll-animate"></div>
+                        <div id="pagination" class="pagination-controls"></div>
+                    </section>
+        
+                    <footer class="footer-wedding">
+                        <div class="scroll-animate">
+                            <h2 class="section-title" style="color: #fff;">Zalza & Azhar Wedding</h2>
+                        </div>
+                        <div class="copyright animate-scale">
+                            <div class="logo">
+                                <img src="https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/logo.png?raw=true" alt="Logo" />
+                            </div>
+                            <p>Designed with <i class="fa fa-heart"></i> by Azra Studio</p>
+                            <p>Copyright &copy; 2025 Azra Studio | All Rights Reserved</p>
+                            <div class="social-media">
+                                <a href="https://www.instagram.com/azharrafiq_sjn/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@arrafiq7425">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="https://wa.me/6287720681873?text=Halo%20Azra%20Studio,%20Saya%20ingin%20tanya%20tentang%20wedding%20invitation%20anda">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div style="padding-top: 2rem;">
+                                <i class="fa fa-music"></i>
+                                <p>PERFECT - Ed Sheeran [Saxophone Version]</p>
+                            </div>
+                        </div>
+                        <div class="gradasi-bawah"></div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPT -->
+        <script src="script.js" defer></script>
+    </body>
+</html>
