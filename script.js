@@ -60,7 +60,7 @@ document.getElementById('openBtn').addEventListener('click', function () {
         bgMusic.pause();
     });
 
-    document.getElementById('cover').style.transform = 'translateY(-100%)';
+    document.getElementById('cover').style.opacity = '0';
     setTimeout(() => {
         document.getElementById('cover').style.display = 'none';
         document.getElementById('mainContent').style.display = 'block';
@@ -201,19 +201,34 @@ function renderRSVPPage(data, page) {
     const pageData = data.slice(start, end);
 
     pageData.forEach((rsvp, index) => {
-        const initials = getInitials(rsvp.Nama);
-        const html = `
-            <div class="rsvp-item">
-                <div class="badge-name" style="background-color: #${Math.floor(Math.random() * 16777215).toString(16)}; color: #${Math.floor(Math.random() * 16777215).toString(16)}">
-                    <span>${initials}</span>
+        if (!rsvp.nama || !rsvp.Ucapan) {
+            const html = `
+                <div class="rsvp-item">
+                    <div class="rsvp-content">
+                        <div class="empty-comment">
+                            <div class="empty-content">
+                                <p>Belum ada ucapan</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="rsvp-content">
-                    <span id="rsvp-${start + index}" class="namaPengirim">${rsvp.Nama} <i class="${rsvp.Status === "Hadir" ? "fas fa-check" : "fas fa-times"}"></i></span>
-                    <span id="rsvp-${start + index}" class="pesanPengirim">${rsvp.Ucapan}</span>
+            `;
+            rsvpForm.innerHTML += html;
+        } else {
+            const initials = getInitials(rsvp.Nama);
+            const html = `
+                <div class="rsvp-item">
+                    <div class="badge-name" style="background-color: #${Math.floor(Math.random() * 16777215).toString(16)}; color: #${Math.floor(Math.random() * 16777215).toString(16)}">
+                        <span>${initials}</span>
+                    </div>
+                    <div class="rsvp-content">
+                        <span id="rsvp-${start + index}" class="namaPengirim">${rsvp.Nama} <i class="${rsvp.Status === "Hadir" ? "fas fa-check" : "fas fa-times"}"></i></span>
+                        <span id="rsvp-${start + index}" class="pesanPengirim">${rsvp.Ucapan}</span>
+                    </div>
                 </div>
-            </div>
-        `;
-        rsvpForm.innerHTML += html;
+            `;
+            rsvpForm.innerHTML += html;
+        }
     });
 
     renderPaginationControls(data.length, page);
@@ -252,7 +267,7 @@ function loadRSVPData() {
 
     const sheetDataHandler = (sheetData) => {
         allRsvpData = sheetData;
-        jumlahUcapan.innerHTML = sheetData.length;
+        jumlahUcapan.innerHTML = !sheetData[0].nama || !sheetData[0].Ucapan ? 0 : sheetData.length;
         renderRSVPPage(allRsvpData, currentPage);
     };
 
@@ -266,7 +281,7 @@ function loadRSVPData() {
 
 // Countdown
 const countdown = document.getElementById("countdown");
-const weddingDate = new Date("2026-01-24T10:00:00").getTime();
+const weddingDate = new Date("2026-01-17T10:00:00").getTime();
 function updateCountdown() {
     const now = new Date().getTime();
     const distance = weddingDate - now;
