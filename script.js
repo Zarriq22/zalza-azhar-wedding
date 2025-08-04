@@ -112,7 +112,7 @@ const container = document.getElementById('giftContainer');
 
 dataGift.forEach((gift, index) => {
     const html = `
-        <div class="gift-card scroll-animate">
+        <div class="scroll-animate">
             <div class="gift-content">
                 <img src="https://raw.githubusercontent.com/Zarriq22/assset-azra-wedding/refs/heads/main/images/card-atm.webp" alt="Gift" class="gift-image" />
                 <img src="https://raw.githubusercontent.com/Zarriq22/assset-azra-wedding/refs/heads/main/images/chip-atm.webp" alt="Chip" class="gift-chip" />
@@ -297,21 +297,29 @@ function updateCountdown() {
     countdown.innerHTML = `<p>${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik</p>`;
     countdown.innerHTML = 
         `
-        <div class="badge-time">
-            <span>${days}</span>
-            <span>Hari</span>
+        <div class="bg-badge-time">
+            <div class="badge-time">
+                <span>${days}</span>
+                <span>Hari</span>
+            </div>
         </div>
-        <div class="badge-time">
-            <span>${hours}</span>
-            <span>Jam</span>
+        <div class="bg-badge-time">
+            <div class="badge-time">
+                <span>${hours}</span>
+                <span>Jam</span>
+            </div>
         </div>
-        <div class="badge-time">
-            <span>${minutes}</span>
-            <span>Menit</span>
+        <div class="bg-badge-time">
+            <div class="badge-time">
+                <span>${minutes}</span>
+                <span>Menit</span>
+            </div>
         </div>
-        <div class="badge-time">
-            <span>${seconds}</span>
-            <span>Detik</span>
+        <div class="bg-badge-time">
+            <div class="badge-time">
+                <span>${seconds}</span>
+                <span>Detik</span>
+            </div>
         </div>
     `;
 }
