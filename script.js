@@ -19,7 +19,7 @@ function updateAnimatedElements() {
 }
 
 function handleScrollAnimation() {
-    const triggerBottom = window.innerHeight * 0.85;
+    const triggerBottom = window.innerHeight * 0.9;
 
     animatedElements.forEach(el => {
         const boxTop = el.getBoundingClientRect().top;
