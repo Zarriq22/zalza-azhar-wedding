@@ -624,6 +624,7 @@ section {
 
 .gift-card {
     width: 100%;
+    margin-top: 2%
 }
 
 .gift-content {
@@ -983,6 +984,11 @@ section {
     background: var(--bg-color);
 }
 
+#openBtn:active,
+#openBtn:focus {
+    border-radius: 8px;
+}
+
 /* Button Musik */
 .music {
     border: none;
@@ -1078,11 +1084,16 @@ section {
     }
 
     .gift-content {
-        padding: 0rem 2rem
+        padding: 0rem 2rem;
+        margin-bottom: 1rem;
     }
 
     .akad-card {
         padding: 40px 32px;
+    }
+
+    .cp-name {
+        padding-top: 32%
     }
 
     .cp-address .alamat {
