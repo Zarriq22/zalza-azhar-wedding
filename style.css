@@ -1073,7 +1073,19 @@ section {
     .sec-introduce,
     .section-mempelai,
     .wedding-gift {
-        width: 80%;
+        width: 85%;
+    }
+
+    .gift-content {
+        padding: 0rem 2rem
+    }
+
+    .akad-card {
+        padding: 40px 32px;
+    }
+
+    .cp-address .alamat {
+        padding: 10px 25px
     }
 
     #home h1 {
