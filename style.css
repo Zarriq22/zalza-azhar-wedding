@@ -567,6 +567,7 @@ section {
     padding: 10px 75px;
     color: var(--white-color);
     text-shadow: 3px 3px 5px var(--font-color);
+    margin-top: 5px;
 }
 
 .maps-icon {
