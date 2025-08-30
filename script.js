@@ -121,13 +121,13 @@ function toggleMusic() {
 const dataGift = [
     {
         "namaBank": "BCA",
-        "nomor": "Nomor Rekening",
+        "nomor": "5035342475",
         "penerima": "Azhar Abdurrafiq Sujana",
         "img": 'https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bank-bca.png?raw=true'
     },
     {
         "namaBank": "BSI",
-        "nomor": "Nomor Rekening",
+        "nomor": "7295349958",
         "penerima": "Azhar Abdurrafiq Sujana",
         "img": 'https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bank-bsi.png?raw=true'
     }
@@ -226,7 +226,8 @@ function renderRSVPPage(data, page) {
     const pageData = data.slice(start, end);
 
     pageData.forEach((rsvp, index) => {
-        if (!rsvp.nama || !rsvp.Ucapan) {
+        console.log(rsvp);
+        if (!rsvp.Nama || !rsvp.Ucapan) {
             const html = `
                 <div class="rsvp-item">
                     <div class="rsvp-content">
@@ -292,7 +293,7 @@ function loadRSVPData() {
 
     const sheetDataHandler = (sheetData) => {
         allRsvpData = sheetData;
-        jumlahUcapan.innerHTML = !sheetData[0].nama || !sheetData[0].Ucapan ? 0 : sheetData.length;
+        jumlahUcapan.innerHTML = !sheetData[0].Nama || !sheetData[0].Ucapan ? 0 : sheetData.length;
         renderRSVPPage(allRsvpData, currentPage);
     };
 
