@@ -227,7 +227,7 @@ function renderRSVPPage(data, page) {
 
     pageData.forEach((rsvp, index) => {
         console.log(rsvp);
-        if (!rsvp.Nama || !rsvp.Ucapan) {
+        if (!rsvp.Nama && !rsvp.Ucapan) {
             const html = `
                 <div class="rsvp-item">
                     <div class="rsvp-content">
@@ -248,8 +248,8 @@ function renderRSVPPage(data, page) {
                         <span>${initials}</span>
                     </div>
                     <div class="rsvp-content">
-                        <span id="rsvp-${start + index}" class="namaPengirim">${rsvp.Nama} <i class="${rsvp.Status === "Hadir" ? "fas fa-check" : "fas fa-times"}"></i></span>
-                        <span id="rsvp-${start + index}" class="pesanPengirim">${rsvp.Ucapan}</span>
+                        <span id="rsvp-${start + index}" class="namaPengirim">${rsvp.Nama || '-'} <i class="${rsvp.Status === "Hadir" ? "fas fa-check" : "fas fa-times"}"></i></span>
+                        <span id="rsvp-${start + index}" class="pesanPengirim">Ucapan: ${rsvp.Ucapan || '-'}</span>
                     </div>
                 </div>
             `;

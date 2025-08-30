@@ -1229,6 +1229,10 @@ section {
     #hasil {
         width: 85%;
     }
+
+    .galery-last {
+        display: none;
+    }
 }
 
 .scroll-animate {
