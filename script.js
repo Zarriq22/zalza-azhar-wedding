@@ -38,9 +38,40 @@ function handleScrollAnimation() {
             el.classList.remove('show');
         }
     });
+
+    // ===== Progress Line Animation =====
+    const story = document.querySelector('.our-story');
+    if (story) {
+        const progressLine = story.querySelector('.progress-line');
+        if (progressLine) {
+            const sectionTop = story.offsetTop;
+            const sectionHeight = story.offsetHeight;
+            const scrollY = window.scrollY + window.innerHeight / 2;
+
+            let progress = ((scrollY - sectionTop) / sectionHeight) * 100;
+            if (progress < 0) progress = 0;
+            if (progress > 100) progress = 100;
+
+            progressLine.style.height = progress + '%';
+        }
+    }
 }
 
 window.addEventListener('scroll', handleScrollAnimation);
+window.addEventListener('DOMContentLoaded', () => {
+    updateAnimatedElements();
+
+    // Bikin progress-line di awal
+    const story = document.querySelector('.our-story');
+    if (story && !story.querySelector('.progress-line')) {
+        const progressLine = document.createElement('div');
+        progressLine.classList.add('progress-line');
+        story.appendChild(progressLine);
+    }
+
+    // Trigger animasi awal
+    handleScrollAnimation();
+});
 
 // Open Undangan
 document.getElementById('openBtn').addEventListener('click', function () {
@@ -89,21 +120,15 @@ function toggleMusic() {
 //Gift Card
 const dataGift = [
     {
-        "namaBank": "Mandiri",
-        "nomor": "Nomor Rekening",
-        "penerima": "Nama Penerima",
-        "img": 'https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bank-mandiri.png?raw=true'
-    },
-    {
         "namaBank": "BCA",
         "nomor": "Nomor Rekening",
-        "penerima": "Nama Penerima",
+        "penerima": "Azhar Abdurrafiq Sujana",
         "img": 'https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bank-bca.png?raw=true'
     },
     {
         "namaBank": "BSI",
         "nomor": "Nomor Rekening",
-        "penerima": "Nama Penerima",
+        "penerima": "Azhar Abdurrafiq Sujana",
         "img": 'https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bank-bsi.png?raw=true'
     }
 ];

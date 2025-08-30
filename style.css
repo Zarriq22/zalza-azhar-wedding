@@ -733,6 +733,77 @@ section {
     transform: scale(1.05);
 }
 
+/* Section Story */
+.cerita-kita {
+    position: relative;
+    background-color: var(--opacity-65);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 3rem;
+    padding: 0px 40px 20px;
+}
+
+/* Garis background */
+.our-story {
+    position: relative;
+    padding-left: 40px;
+}
+
+/* Garis abu-abu penuh */
+.our-story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 4px;
+    height: 100%;
+    background: #ddd;
+    border-radius: 2px;
+}
+
+/* Garis progress (yang isi) */
+.progress-line {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 4px;
+    height: 0;
+    background: #4caf50;
+    border-radius: 2px;
+    z-index: 1;
+    transition: height 0.3s ease-out; /* Animasi smooth */
+}
+
+.story-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.story-item .story-year {
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.story-item p {
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Titik di garis */
+.story-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 4px solid #4caf50;
+    border-radius: 50%;
+    z-index: 2;
+}
+
 /* Section RSVP */
 .rsvp {
     position: relative;
