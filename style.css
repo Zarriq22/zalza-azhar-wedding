@@ -5,7 +5,7 @@
     --font-color: #5aa66e;
     --black-text: #1a1a1a;
     --white-text: #ffffff;
-    --opacity-50: rgba(8, 24, 16, 0.15);
+    --opacity-15: rgba(8, 24, 16, 0.15);
     --opacity-50: rgba(8, 24, 16, 0.5);
     --opacity-65: rgba(8, 24, 16, 0.65);
     --opacity-70: rgba(8, 24, 16, 0.7)
@@ -331,6 +331,14 @@ section {
     border: 1px solid var(--accent-color);
 }
 
+.card-mempelai.right {
+    margin-right: 2%;
+}
+
+.card-mempelai.left {
+    margin-left: 2%;
+}
+
 .title-mempelai {
     background-color: var(--opacity-15);
     border: 1px solid var(--accent-color);
@@ -374,8 +382,16 @@ section {
     /* transform: scale(1.5); */
 }
 
+.foto-mempelai.right {
+    transform: translateY(-160px);
+}
+
+.foto-mempelai.left {
+    transform: translateY(-100px);
+}
+
 .nama {
-    color: var(--white-color);
+    color: var(--white-text);
     font-size: 22px;
     font-weight: bold;
     margin: 5px 0;
@@ -604,7 +620,7 @@ section {
     font-size: 14px;
     margin-bottom: 20px;
     padding: 10px 75px;
-    color: var(--white-color);
+    color: var(--white-text);
     text-shadow: 3px 3px 5px var(--font-color);
     margin-top: 5px;
 }
@@ -1027,7 +1043,7 @@ section {
     text-align: center;
     margin-bottom: 1.5rem;
     font-size: 42px;
-    color: var(--white-color);
+    color: var(--white-text);
     text-shadow: 5px 3px 5px var(--font-color);
 }
 
@@ -1287,6 +1303,24 @@ section {
 
     .title-mempelai.right {
         right: -82px
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .title-mempelai {
+        display: none;
+    }
+
+    .card-mempelai.right {
+        margin-right: auto;
+    }
+
+    .card-mempelai.left {
+        margin-left: auto;
+    }
+    
+    .vertical-text {
+        letter-spacing: -10px;
     }
 }
 
