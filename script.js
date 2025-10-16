@@ -9,6 +9,8 @@ if (guestName) {
 // Scroll Animation
 let animatedElements = [];
 let animateScale = [];
+let animateRight = [];
+let animateLeft = [];
 
 function updateAnimatedElements() {
     animatedElements = document.querySelectorAll('.scroll-animate');
@@ -16,6 +18,12 @@ function updateAnimatedElements() {
 
     animateScale = document.querySelectorAll('.animate-scale');
     animateScale.forEach(el => el.classList.remove('show'));
+
+    animateRight = document.querySelectorAll('.animate-right');
+    animateRight.forEach(el => el.classList.remove('show'));
+
+    animateLeft = document.querySelectorAll('.animate-left');
+    animateLeft.forEach(el => el.classList.remove('show'));
 }
 
 function handleScrollAnimation() {
@@ -31,6 +39,24 @@ function handleScrollAnimation() {
     });
 
     animateScale.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+            el.classList.add('show');
+        } else {
+            el.classList.remove('show');
+        }
+    });
+
+    animateRight.forEach(el => {
+        const boxTop = el.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+            el.classList.add('show');
+        } else {
+            el.classList.remove('show');
+        }
+    });
+
+    animateLeft.forEach(el => {
         const boxTop = el.getBoundingClientRect().top;
         if (boxTop < triggerBottom) {
             el.classList.add('show');
@@ -119,6 +145,12 @@ function toggleMusic() {
 
 //Gift Card
 const dataGift = [
+    {
+        "namaBank": "MANDIRI",
+        "nomor": "1820015429012",
+        "penerima": "Zalza Billa Amira MA",
+        "img": 'https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bank-mandiri.png?raw=true'
+    },
     {
         "namaBank": "BCA",
         "nomor": "5035342475",

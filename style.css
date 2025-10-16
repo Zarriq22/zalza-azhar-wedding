@@ -317,6 +317,8 @@ section {
 }
 
 .card-mempelai {
+    position: relative;
+    z-index: 9;
     background-color: var(--opacity-15);
     backdrop-filter: blur(10px); /* bikin kaca efek */
     padding: 20px;
@@ -329,11 +331,43 @@ section {
     border: 1px solid var(--accent-color);
 }
 
+.title-mempelai {
+    background-color: var(--opacity-15);
+    border: 1px solid var(--accent-color);
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.vertical-text {
+    text-orientation: upright; 
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: var(--font-color);
+    text-shadow: 5px 3px 6px var(--accent-color);
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+}
+
+.vertical-text.left {
+    writing-mode: vertical-lr; /* biar dari atas ke bawah, di kiri */
+}
+
+/* groom di kanan */
+.vertical-text.right {
+    right: 0px;
+    writing-mode: vertical-rl; /* biar dari atas ke bawah, di kanan */
+}
+
 .foto-mempelai {
     width: 100%;
     border-radius: 12px;
     margin-bottom: 20px;
-    transform: scale(1.5);
+    /* transform: scale(1.5); */
 }
 
 .nama {
@@ -1253,6 +1287,26 @@ section {
 .scroll-animate.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.animate-right {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.animate-right.show {
+    opacity: 1;
+    transform: translateX(81%);
+}
+
+.animate-left {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.animate-left.show {
+    opacity: 1;
+    transform: translateX(-81%);
 }
 
 .animate-scale {
