@@ -1304,6 +1304,10 @@ section {
     .title-mempelai.right {
         right: -82px
     }
+
+    .vertical-text {
+        letter-spacing: -10px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -1317,10 +1321,6 @@ section {
 
     .card-mempelai.left {
         margin-left: auto;
-    }
-    
-    .vertical-text {
-        letter-spacing: -10px;
     }
 }
 
