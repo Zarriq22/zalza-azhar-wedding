@@ -124,10 +124,6 @@ section {
     width: 30%;
     right: 0;
     height: 100vh;
-}
-
-.background-image {
-    /* background-image: url('https://github.com/Zarriq22/assset-azra-wedding/blob/main/images/bg-layer-green.png?raw=true'); */
     background-image: url('images/layer.png');
     background-size: cover;
     background-position: center;
