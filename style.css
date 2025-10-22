@@ -276,7 +276,7 @@ section {
     display: block;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    transform: scale(1);
+    transform: scale(1.25);
 }
 
 .title-name {
