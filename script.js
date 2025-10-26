@@ -122,7 +122,7 @@ document.getElementById('openBtn').addEventListener('click', function () {
         document.getElementById('cover').style.display = 'none';
         document.getElementById('mainContent').style.display = 'block';
         document.getElementById('bgMusic').play();
-        // document.getElementById('bgVideo').play();
+        document.getElementById('bgVideo').play();
 
         updateAnimatedElements();
         handleScrollAnimation();
