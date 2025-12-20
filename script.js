@@ -339,7 +339,7 @@ function loadRSVPData() {
 
 // Countdown
 const countdown = document.getElementById("countdown");
-const weddingDate = new Date("2026-01-17T08:00:00").getTime();
+const weddingDate = new Date("2026-01-15T08:00:00").getTime();
 function updateCountdown() {
     const now = new Date().getTime();
     const distance = weddingDate - now;
