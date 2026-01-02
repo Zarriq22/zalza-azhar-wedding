@@ -771,7 +771,7 @@ section {
 }
 
 .gallery {
-    column-count: 3;
+    column-count: 2;
     column-gap: 16px;
     max-width: 1000px;
     margin: auto;
@@ -782,7 +782,7 @@ section {
     margin-bottom: 16px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    break-inside: avoid;
+    break-inside:avoid-page;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1342,6 +1342,34 @@ section {
     }
     .cerita-kita {
         padding: 0px 20px 20px
+    }
+    .cp-name {
+        font-size: 38px;
+        padding-top: 15%;
+    }
+    .cp-name div {
+        display: flex;
+        align-items: baseline;
+        height: 110px;
+    }
+    .cp-name h1 {
+        font-size: 3em;
+    }
+    .cp-name span {
+        font-size: 1.5em;
+    }
+    .cp-address .alamat {
+        padding: 10px 0px
+    }
+    .cp-time .cp-time-akad > div span,
+    .cp-time .cp-time-resepsi > div span {
+        font-size: 16px;
+    }
+    .gift-info {
+        padding: 0px 1.7rem
+    }
+    .gift-chip, .gift-detail {
+        left: 9%;
     }
 }
 
