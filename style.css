@@ -1359,17 +1359,24 @@ section {
         font-size: 1.5em;
     }
     .cp-address .alamat {
-        padding: 10px 0px
+        padding: 10px 0px;
+        margin-bottom: 10px;
     }
     .cp-time .cp-time-akad > div span,
     .cp-time .cp-time-resepsi > div span {
-        font-size: 16px;
+        font-size: 14px;
     }
     .gift-info {
         padding: 0px 1.7rem
     }
     .gift-chip, .gift-detail {
         left: 9%;
+    }
+    .cp-address {
+        margin-top: 1rem
+    }
+    .akad-card {
+        padding: 15px 24px
     }
 }
 
