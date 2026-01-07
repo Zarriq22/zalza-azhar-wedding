@@ -276,10 +276,10 @@ function renderRSVPPage(data, page) {
             const initials = getInitials(rsvp.Nama);
             const html = `
                 <div class="rsvp-item">
-                    <div class="badge-name" style="background-color: #${Math.floor(Math.random() * 16777215).toString(16)}; color: #${Math.floor(Math.random() * 16777215).toString(16)}">
+                    <div class="badge-name" style="width: 8%; background-color: #${Math.floor(Math.random() * 16777215).toString(16)}; color: #${Math.floor(Math.random() * 16777215).toString(16)}">
                         <span>${initials}</span>
                     </div>
-                    <div class="rsvp-content">
+                    <div class="rsvp-content" style="width: 92%">
                         <span id="rsvp-${start + index}" class="namaPengirim">${rsvp.Nama || '-'} <i class="${rsvp.Status === "Hadir" ? "fas fa-check" : "fas fa-times"}"></i></span>
                         <span id="rsvp-${start + index}" class="pesanPengirim">Ucapan: ${rsvp.Ucapan || '-'}</span>
                     </div>
